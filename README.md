@@ -204,72 +204,11 @@ SELECT COUNT(DISTINCT customer_key) FROM gold.fact_sales;
 
 ---
 
-# 📊 5. Combined KPI Report
-
-```sql
-SELECT 'Total Sales', SUM(sales_amount)
-UNION ALL
-SELECT 'Total Quantity', SUM(quantity)
-...
-```
-
-👉 This creates a **single report like this:**
-
-| measure_name | measure_value |
-| ------------ | ------------- |
-| Total Sales  | XXXXX         |
-| Total Orders | XXXXX         |
-
-### 💡 Why this is powerful:
-
-* Used in dashboards
-* Clean KPI summary
-
----
-
-# 🏆 6. Ranking Analysis (Partially shown)
-
-### 🔹 Purpose:
-
-* Find **Top products / customers**
-
-Uses:
-
-* `RANK()`
-* `DENSE_RANK()`
-* `ROW_NUMBER()`
-
-👉 Example use case:
-
-* Top 5 products by sales
-* Best customers
-
----
-
 # 🎯 What This Script Really Is
 
 This is called:
 
 ### ✅ **Exploratory Data Analysis (EDA) in SQL**
-
----
-
-# 🚀 Why This Matters (Real World)
-
-This script helps you:
-
-* Understand data structure
-* Identify data quality issues
-* Build KPIs
-* Prepare for dashboards (Power BI / Tableau)
-
----
-
-# 💬 How to Explain in Interview
-
-You can say:
-
-> "This script performs initial data exploration on a star schema warehouse. It inspects metadata using INFORMATION_SCHEMA, explores dimension tables for categorical insights, analyzes date ranges, and computes key business metrics like total sales, orders, and customers. It also prepares aggregated KPI outputs and supports ranking analysis for identifying top-performing entities."
 
 ---
 
