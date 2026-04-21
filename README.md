@@ -212,8 +212,3 @@ This is called:
 
 ---
 
-If you want next step, I can:
-
-* Turn this into **advanced SQL interview questions**
-* Or help you write **Top 10 business queries (Amazon-level difficulty)**
-
