@@ -1,3 +1,127 @@
+# 📊 Exploratory Data Analysis of Retail Sales Using SQL (KPIs & Ranking Insights)
+
+---
+
+## 1️⃣ Executive Summary
+
+This project performs a comprehensive **Exploratory Data Analysis (EDA)** on a retail data warehouse using SQL. The analysis focuses on understanding data structure, generating key business metrics, and identifying top and bottom performers across products and customers.
+
+By leveraging SQL techniques such as aggregation, joins, and window functions, the project transforms raw transactional data into actionable business insights that support decision-making in sales, marketing, and product strategy.
+
+---
+
+## 2️⃣ Business Problem
+
+Retail businesses often struggle to:
+
+* Understand overall sales performance
+* Identify high-value customers and top-performing products
+* Track key business KPIs efficiently
+* Detect underperforming products or low-engagement customers
+
+Without proper analysis, this leads to missed revenue opportunities and inefficient decision-making.
+
+This project aims to solve these challenges using structured SQL-based data exploration.
+
+---
+
+## 3️⃣ Methodology
+
+The analysis follows a structured EDA approach:
+
+### 🔹 Database Exploration
+
+* Used `INFORMATION_SCHEMA` to inspect tables and columns
+* Understood schema design (fact & dimension tables)
+
+### 🔹 Dimension Analysis
+
+* Explored customer demographics (e.g., countries)
+* Analyzed product hierarchy (category, subcategory)
+
+### 🔹 Date Range Analysis
+
+* Identified data coverage (first and last order dates)
+* Analyzed customer age distribution
+
+### 🔹 KPI & Metrics Calculation
+
+* Total Sales
+* Total Quantity Sold
+* Average Price
+* Total Orders (distinct)
+* Total Customers & Active Customers
+
+### 🔹 Reporting Layer
+
+* Combined KPIs into a unified report using `UNION ALL`
+
+### 🔹 Ranking Analysis
+
+* Identified:
+
+  * Top 5 products by revenue
+  * Bottom 5 products
+  * Top 10 customers
+  * Least active customers
+* Used:
+
+  * `GROUP BY`
+  * `ORDER BY`
+  * Window functions (`RANK()`)
+
+---
+
+## 4️⃣ Skills
+
+This project demonstrates the following skills:
+
+* SQL Data Analysis
+* Exploratory Data Analysis (EDA)
+* Data Warehousing Concepts (Fact & Dimension Tables)
+* Aggregations (SUM, AVG, COUNT)
+* Joins (Fact-Dimension Relationships)
+* Window Functions (RANK)
+* KPI Design & Reporting
+* Business Insight Generation
+
+---
+
+## 5️⃣ Results & Business Recommendation
+
+### 📊 Key Insights:
+
+* Identified top-performing products contributing the highest revenue
+* Discovered low-performing products that may require review or discontinuation
+* Recognized high-value customers driving significant revenue
+* Measured overall business performance using KPIs
+
+### 💡 Business Recommendations:
+
+* Focus marketing efforts on high-value customer segments
+* Promote top-performing products to maximize revenue
+* Re-evaluate or optimize underperforming products
+* Use KPI dashboards for continuous monitoring
+
+---
+
+## 6️⃣ Next Steps
+
+To enhance this project further:
+
+* 📈 Build a Power BI / Tableau dashboard for visualization
+* ⏳ Add time-series analysis (monthly/quarterly trends)
+* 👥 Perform advanced customer segmentation (RFM analysis)
+* 🤖 Integrate predictive analytics (sales forecasting)
+* 🧩 Automate data pipeline for real-time reporting
+
+---
+
+## 📌 Conclusion
+
+This project showcases how SQL can be effectively used to explore data, generate KPIs, and derive meaningful business insights from a retail dataset. It highlights both technical expertise and analytical thinking required for real-world data analyst roles.
+
+---
 
 ---
 
