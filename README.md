@@ -6,9 +6,14 @@
 ### 🔹 Code:
 
 ```sql
-SELECT TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE  
+SELECT TABLE_CATALOG,
+        TABLE_SCHEMA,
+        TABLE_NAME,
+        TABLE_TYPE  
 FROM INFORMATION_SCHEMA.TABLES;
 ```
+<img width="639" height="511" alt="image" src="https://github.com/user-attachments/assets/36ec90f9-9b7b-4428-bb42-bfae1360e997" />
+
 
 👉 **What it does:**
 
@@ -23,10 +28,14 @@ FROM INFORMATION_SCHEMA.TABLES;
 ### 🔹 Column Metadata:
 
 ```sql
-SELECT COLUMN_NAME, DATA_TYPE, IS_NULLABLE, CHARACTER_MAXIMUM_LENGTH
+SELECT COLUMN_NAME,
+       DATA_TYPE,
+       IS_NULLABLE,
+       CHARACTER_MAXIMUM_LENGTH
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'dim_customers';
 ```
+<img width="678" height="476" alt="image" src="https://github.com/user-attachments/assets/42caeee3-0e15-482e-b734-265eca480217" />
 
 👉 **What it does:**
 
@@ -50,6 +59,7 @@ SELECT DISTINCT country
 FROM gold.dim_customers
 ORDER BY country;
 ```
+<img width="799" height="348" alt="image" src="https://github.com/user-attachments/assets/f11a0349-3b03-4593-9cce-6b0347acb7dd" />
 
 👉 **Purpose:**
 
@@ -68,6 +78,7 @@ SELECT DISTINCT category, subcategory, product_name
 FROM gold.dim_products
 ORDER BY category, subcategory, product_name;
 ```
+<img width="776" height="588" alt="image" src="https://github.com/user-attachments/assets/38ceacc0-04dc-40e5-93be-7d3da098010c" />
 
 👉 **Purpose:**
 
@@ -90,6 +101,7 @@ SELECT
     DATEDIFF(MONTH, MIN(order_date), MAX(order_date))
 FROM gold.fact_sales;
 ```
+<img width="846" height="320" alt="image" src="https://github.com/user-attachments/assets/4f1a4033-7d63-45b9-afce-b1ebbc449361" />
 
 👉 **What it does:**
 
@@ -115,6 +127,7 @@ SELECT
     DATEDIFF(YEAR, MAX(birthdate), GETDATE())
 FROM gold.dim_customers;
 ```
+<img width="754" height="329" alt="image" src="https://github.com/user-attachments/assets/c592463e-0e47-4d4a-a2f9-47573d19c9b9" />
 
 👉 **What it does:**
 
