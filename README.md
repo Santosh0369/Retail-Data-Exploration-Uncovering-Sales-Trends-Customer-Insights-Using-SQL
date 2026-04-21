@@ -213,12 +213,8 @@ SELECT COUNT(DISTINCT customer_key) FROM gold.fact_sales;
 
 # 📊 5. KPI Report (Very Important)
 
-```sql
-SELECT 'Total Sales', SUM(sales_amount)
-UNION ALL
-SELECT 'Total Quantity', SUM(quantity)
-...
-```
+
+<img width="947" height="520" alt="image" src="https://github.com/user-attachments/assets/c76f6332-53ae-4f3c-9559-eacb18aabeb2" />
 
 👉 **What it does:**
 
@@ -250,6 +246,7 @@ JOIN dim_products p
 GROUP BY p.product_name
 ORDER BY total_revenue DESC;
 ```
+<img width="661" height="422" alt="image" src="https://github.com/user-attachments/assets/f71f24e0-477a-49db-b248-e02e3782ca58" />
 
 👉 Finds best-selling products
 
@@ -257,9 +254,8 @@ ORDER BY total_revenue DESC;
 
 ## 🔹 Top 5 Products (Window Function)
 
-```sql
-RANK() OVER (ORDER BY SUM(sales_amount) DESC)
-```
+<img width="826" height="505" alt="image" src="https://github.com/user-attachments/assets/317ab28e-93bd-4862-a0c3-c8f59c20c15a" />
+
 
 👉 **Why better:**
 
@@ -269,9 +265,7 @@ RANK() OVER (ORDER BY SUM(sales_amount) DESC)
 
 ## 🔹 Bottom 5 Products
 
-```sql
-ORDER BY total_revenue
-```
+<img width="710" height="428" alt="image" src="https://github.com/user-attachments/assets/8d69dfbf-9123-41b0-bff8-37091cd5242c" />
 
 👉 Finds worst performers
 
@@ -279,9 +273,7 @@ ORDER BY total_revenue
 
 ## 🔹 Top 10 Customers
 
-```sql
-SUM(sales_amount)
-```
+<img width="743" height="599" alt="image" src="https://github.com/user-attachments/assets/62452f02-adbe-4039-874a-7c92176c8589" />
 
 👉 Identifies high-value customers
 
@@ -289,10 +281,8 @@ SUM(sales_amount)
 
 ## 🔹 Lowest 3 Customers (by orders)
 
-```sql
-COUNT(DISTINCT order_number)
-ORDER BY total_orders
-```
+<img width="647" height="520" alt="image" src="https://github.com/user-attachments/assets/ddf09a1d-4595-4a5c-9f62-efea611c1cd3" />
+
 
 👉 Finds least engaged customers
 
@@ -320,21 +310,7 @@ This single script shows:
 
 ---
 
-# 💬 Interview Explanation (Use This!)
 
-> "This SQL script performs end-to-end exploratory data analysis on a retail data warehouse. It begins with schema exploration using INFORMATION_SCHEMA, analyzes dimensions like customers and products, evaluates date ranges, and computes key business KPIs such as total sales and orders. It also includes ranking analysis to identify top and bottom performing products and customers using aggregation and window functions."
-
----
-
-# 🧠 Simple Summary
-
-👉 In one line:
-
-> This code **explores data, calculates KPIs, and identifies top/bottom performers in a retail dataset using SQL**
-
----
-
-If you want next step, I can:
 
 * Turn this into **real business insights (like storytelling for interviews)**
 * Or give **advanced SQL questions based on this script (Amazon-level)** 🚀
