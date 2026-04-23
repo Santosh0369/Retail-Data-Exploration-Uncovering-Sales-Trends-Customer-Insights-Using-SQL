@@ -434,8 +434,3 @@ This single script shows:
 
 ---
 
-
-
-* Turn this into **real business insights (like storytelling for interviews)**
-* Or give **advanced SQL questions based on this script (Amazon-level)** 🚀
-
